@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Using DeskPins</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+<h1>Using DeskPins</h1>
+<h2>Working with DeskPins</h2>
+<p>While <span lang="en-us">it </span>is running, DeskPins will place an icon  on the taskbar
+notification area (systray). You can click on it to enter <a href="pinmode.htm">Pin mode</a>,
+or right-click on it to display the <a href="traymenu.htm">Tray icon menu</a>. You can also use
+<a href="hotkeys.htm">Hotkeys</a>
+to perform certain actions.</p>
+<h2>Pin indicator</h2>
+
+<p>When a window is pinned, a small pin icon is placed on its caption, next to
+the min<span lang="en-us">imize, </span>max<span lang="en-us">imize, and </span>close buttons, as a reminder. You can click on it to remove it and make the pinned
+window normal again (non-topmost). Closing DeskPins will also remove all pins
+currently in use.</p>
+
+<p>You can safely minimize a pinned window to temporarily make room on the
+screen for other programs. When you restore it, the pin will still be there and
+the window will still be top-most.</p>
+
+<p>Closing a pinned window (via the X button or Alt-F4) will automatically free the
+associated pin.</p>
+<p>You can find out how many pins are currently in use by right-clicking on the
+DeskPins tray icon and selecting the &quot;About...&quot; command. The About
+dialog displays the number of active pins using a bold font.</p>
+
+<h2>Window ownership</h2>
+<p>An application can have many windows. Some of them (for example, dialog boxes
+or tool windows) are usually <i>owned</i> by another window, called the <i>owner
+window</i>. This means that they are always shown on top of their owner. Since
+it doesn't make much sense to pin an owned window by itself, DeskPins will
+always check if the window you are trying to pin has an owner and pin <i>that</i>
+instead. To see this in action, open Notepad and bring up the About dialog from
+the Help menu. If you try to pin the About dialog, the pin will be placed on the
+Notepad window. Of course, pinning an owner will also make all its owned windows
+topmost.</p>
+
+</body>
+
+</html>

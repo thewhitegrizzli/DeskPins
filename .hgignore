@@ -1,0 +1,4 @@
+syntax: glob
+*.{aps,suo,ncb,user}
+{Debug,Release}/*
+installer/*.exe

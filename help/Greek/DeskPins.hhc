@@ -1,0 +1,41 @@
+              <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="EF_HTML2HHC_alpha_Nov2003">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+  <param name="Window Styles" value="0x25">
+</OBJECT>
+<UL>
+	<LI><OBJECT type="text/sitemap"><param name="Name" value="Καλώς ορίσατε"><param name="Local" value="welcome.htm"></OBJECT>
+	<UL>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Νέα"><param name="Local" value="whatsnew.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Ξεκινώντας"><param name="Local" value="gettingstarted.htm"></OBJECT>
+	</UL>
+	<LI><OBJECT type="text/sitemap"><param name="Name" value="Χρήση του DeskPins"><param name="Local" value="using.htm"></OBJECT>
+	<UL>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Κατάσταση καρφίτσας"><param name="Local" value="pinmode.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Αυτόματο καρφίτσωμα παραθύρων"><param name="Local" value="autopinningwnd.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Πλήκτρα συντόμευσης"><param name="Local" value="hotkeys.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Μενού εικονιδίου tray"><param name="Local" value="traymenu.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Πλαίσιο διαλόγου Επιλογές"><param name="Local" value="optionsdlg.htm"></OBJECT>
+		<UL>
+			<LI><OBJECT type="text/sitemap"><param name="Name" value="Επιλογές καρφίτσας"><param name="Local" value="optpins.htm"></OBJECT>
+			<LI><OBJECT type="text/sitemap"><param name="Name" value="Επιλογές αυτόματου καρφιτσώματος"><param name="Local" value="optautopin.htm"></OBJECT>
+			<LI><OBJECT type="text/sitemap"><param name="Name" value="Επιλογές πλήκτρων συντόμευσης"><param name="Local" value="opthotkeys.htm"></OBJECT>
+			<LI><OBJECT type="text/sitemap"><param name="Name" value="Επιλογές γλώσσας"><param name="Local" value="optlang.htm"></OBJECT>
+		</UL>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Πλαίσιο διαλόγου επεξεργασία κανόνα"><param name="Local" value="editruledlg.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Πακέτα γλώσσας"><param name="Local" value="langpacks.htm"></OBJECT>
+	</UL>
+	<LI><OBJECT type="text/sitemap"><param name="Name" value="Περισσότερα"><param name="Local" value="more.htm"></OBJECT>
+	<UL>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Επεγκατάσταση"><param name="Local" value="uninstall.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Υποστήριξη και επικοινωνία"><param name="Local" value="supportcontact.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Γνωστά ζητήματα"><param name="Local" value="knownissues.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Ιστορικό"><param name="Local" value="history.htm"></OBJECT>
+		<LI><OBJECT type="text/sitemap"><param name="Name" value="Νομικά"><param name="Local" value="legal.htm"></OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

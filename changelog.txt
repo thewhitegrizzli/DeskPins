@@ -1,0 +1,33 @@
+v1.32 -- 2015.02.20
+- Fixed inability to autopin windows of 64-bit processes.
+
+v1.31 -- 2014.09.15
+- Fixed mouse pin bug on Windows 8.
+- Unicode support for modern Windows versions.
+- Removed UPX compression, to avoid being flagged by anti-malware.
+
+v1.30 -- 2004.05.03
+- Autopin feature. 
+- Better localization support. DeskPins now supports separate language packs, instead of including all languages in the main program file. 
+- Pins can be of any color. 
+- Full XP theme support. 
+- Tab-based Options dialog. 
+- Fixed a multi-monitor bug reported by Grant Emsley and tested on multi-monitors system. 
+- Fixed a bug that would crash DeskPins just before exiting on Win9x (options were not written in the registry). 
+
+v1.21 -- 2003.06
+- Changed the tray icon activation method to a single click (rather than a double click). Thanks to "Stathakis" for mentioning it. 
+- Completely re-designed the internal window-picking implementation (pin mode) to prevent the desktop from blinking; it should now be possible to work with multi-monitor configurations (although not checked yet). 
+- Built-in Greek interface support. 
+
+v1.20 -- 2003.05
+- Windows with hidden parents can now be pinned (e.g. Display Properties). 
+- Works with Delphi/Builder apps (VCL). 
+- Distributed in self-installable executable. 
+
+v1.10 -- 2002.12
+- Replaced pin window with a pin cursor. 
+- Added hotkeys as suggested by "scooby". 
+
+v1.00 -- 2002.11
+- First public release. 

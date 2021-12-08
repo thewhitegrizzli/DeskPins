@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Auto-pinning windows</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+<h1>Auto-Pinning Windows</h1>
+<p>You can configure DeskPins to automatically pin certain windows as soon as
+they are created. This should be useful in case you always want to make an
+application topmost (e.g. Calculator, console windows, etc).</p>
+<h2>Rules</h2>
+<p>You can specify which windows will be auto-pinned by adding auto-pin rules
+(see <a href="optautopin.htm">Autopin options</a>). Every time a window is created, DeskPins will check whether it satisfies any
+rules, and if so, it will pin it. A rule consists of two parameters: a <b> title</b> and a
+<b>class</b>, which are explained below.
+Both parameters can contain DOS-style wildcards (* and ?) and they are <i>not</i>
+case sensitive.</p>
+<h3>Title</h3>
+<p>The window title is usually displayed on its caption. Applications also
+display the title of their main window on the taskbar. The title may contain
+more than just the application name; for example, many programs also display a document name.</p>
+<p>When you create a rule based on the window title, you should try to specify
+the part of the title that stays the same. An example may help: Suppose you
+would like to create a rule for Notepad. The window's title will be
+&quot;Untitled&nbsp;-&nbsp;Notepad&quot; if no file is open, or &quot;<i>some
+file name</i>&nbsp;-&nbsp;Notepad&quot; otherwise. To make sure that both cases
+are covered, you should mask out the variable part and only keep the part that's
+always the same. So, you could use something like &quot;*&nbsp;-&nbsp;Notepad&quot;,
+where the * wildcard represents any possible combination of characters.</p>
+<h3>Class</h3>
+<p>The window class is essentially its type. It is specified when a window is
+created and remains unchanged until its removal. It is used mainly by
+application developers; most end users need not worry about it. However, because
+of its persistence, the window class can be used to easily identify windows. For example, all Notepad windows have a class name of
+&quot;Notepad&quot;. So, another way to detect these windows would be to specify
+their class name, without worrying about the title, since only Notepad windows
+will be of class &quot;Notepad&quot;. However, using both the class name <i> and</i> the
+window title (wherever possible) is considered best practice.</p>
+<p>Some examples of class names are:</p>
+<ul>
+  <li><i>CabinetWClass</i>: Explorer folder windows</li>
+  <li><i>ConsoleWindowClass</i>: Console windows</li>
+  <li><i>MSPaintApp</i>: the Windows Paint utility</li>
+</ul>
+<p>The <a href="editruledlg.htm">Edit Rule dialog</a>
+provides a simple way to read the title and class of any window by using the
+mouse.</p>
+<h3>Delay</h3>
+<p>Although the class name is invariable during the lifetime of a window, its
+title is not. To make things worse, the title usually changes after the window
+is created but before it is shown, making it impossible to see the original
+title. To overcome this, DeskPins lets you specify a
+delay after the creation of a window, to allow for any changes to take place.
+This delay is measured in milliseconds and applies for all the rules. You can
+set this delay, along with the auto-pin rules in the <a href="optautopin.htm">Autopin options</a>
+page.</p>
+<h2>Tips</h2>
+<ul>
+  <li>Try to be as specific as possible when defining rules. Also, try to use both a
+    window title <i> and</i> a class when possible.</li>
+  <li>Use a single asterisk (*) to match any text. Leaving a field empty will
+    only match an empty title or class. Note, however, that a window class cannot be
+    empty.</li>
+  <li>Don't rely on the class of dialog windows being unique. Almost all dialog
+    boxes in all applications have the same class (&quot;#32770&quot;). If you
+    must make a rule depending on a dialog box, you should also use the dialog
+    title.</li>
+</ul>
+
+</body>
+
+</html>

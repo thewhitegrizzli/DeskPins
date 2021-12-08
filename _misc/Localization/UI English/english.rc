@@ -1,0 +1,344 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 212, 79
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DeskPins"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            1,IDC_LOGO,4,4,20,20
+    LTEXT           "DeskPins v1.30 - Freeware\nCopyright © 2002-2004\nby Elias Fotinis",
+                    IDC_STATIC,32,4,124,24,NOT WS_GROUP
+    RTEXT           "Pins used:",IDC_STATIC,32,36,52,8
+    LTEXT           "0",IDC_STATUS,88,36,40,8,NOT WS_GROUP
+    LTEXT           "Email:",IDC_STATIC,4,52,20,8,NOT WS_GROUP
+    LTEXT           "efotinis@pat.forthnet.gr",IDC_MAIL,24,52,84,8,NOT 
+                    WS_GROUP
+    LTEXT           "Web:",IDC_STATIC,4,60,20,8,NOT WS_GROUP
+    LTEXT           "users.forthnet.gr/pat/efotinis/",IDC_WEB,24,60,104,8,
+                    NOT WS_GROUP
+    LTEXT           "DeskPins page",IDC_WEB2,24,68,104,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,160,-4,1,84
+    PUSHBUTTON      "OK",IDOK,168,4,38,14,BS_CENTER,WS_EX_STATICEDGE
+END
+
+IDD_EDIT_AUTOPIN_RULE DIALOG DISCARDABLE  0, 0, 220, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Rule"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Rule",IDC_STATIC,4,4,212,64
+    LTEXT           "&Description",IDC_STATIC,12,18,44,8
+    EDITTEXT        IDC_DESCR,60,16,128,12,ES_AUTOHSCROLL
+    LTEXT           "&Title",IDC_STATIC,12,34,20,8
+    EDITTEXT        IDC_TITLE,60,32,128,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_TTLPICK,192,32,16,12,SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "&Class",IDC_STATIC,12,50,20,8
+    EDITTEXT        IDC_CLASS,60,48,128,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_CLSPICK,192,48,16,12,SS_NOTIFY | NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,52,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,108,76,50,14
+    PUSHBUTTON      "Help",IDHELP,164,76,50,14
+END
+
+IDD_OPT_AUTOPIN DIALOG DISCARDABLE  0, 0, 212, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Autopin"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_AUTOPIN_GROUP,8,8,196,128
+    CONTROL         "E&nable",IDC_AUTOPIN_ON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,8,38,10
+    LTEXT           "Rules",IDC_DUMMY,20,24,19,8
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,20,32,112,76
+    PUSHBUTTON      "&Add...",IDC_ADD,144,24,50,14
+    PUSHBUTTON      "&Remove",IDC_REMOVE,144,40,50,14
+    PUSHBUTTON      "&Edit...",IDC_EDIT,144,56,50,14
+    PUSHBUTTON      "Move &Up",IDC_UP,144,76,50,14
+    PUSHBUTTON      "Move &Down",IDC_DOWN,144,92,50,14
+    LTEXT           "De&lay",IDC_STATIC,20,118,19,8
+    EDITTEXT        IDC_RULE_DELAY,52,116,40,12,ES_NUMBER
+    CONTROL         "UpDown1",IDC_RULE_DELAY_UD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,80,116,11,11
+    LTEXT           "msec",IDC_STATIC,96,118,22,8,NOT WS_GROUP
+END
+
+IDD_OPT_HOTKEYS DIALOG DISCARDABLE  0, 0, 212, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hotkeys"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_HOTKEYS_GROUP,8,8,196,80
+    CONTROL         "&Enable",IDC_HOTKEYS_ON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,8,38,10
+    LTEXT           "Enter pin &mode",IDC_STATIC,16,24,52,8,NOT WS_GROUP
+    CONTROL         "HotKey1",IDC_HOT_PINMODE,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,16,36,180,12
+    LTEXT           "&Toggle active window pin",IDC_STATIC,16,56,92,8,NOT 
+                    WS_GROUP
+    CONTROL         "HotKey2",IDC_HOT_TOGGLEPIN,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,16,68,180,12
+END
+
+IDD_OPT_LANG DIALOG DISCARDABLE  0, 0, 212, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Language"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Interface",IDC_STATIC,8,8,196,40
+    COMBOBOX        IDC_UILANG,16,24,180,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Help",IDC_STATIC,8,56,196,40
+    COMBOBOX        IDC_HELPLANG,16,72,180,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPT_PINS DIALOG DISCARDABLE  0, 0, 212, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pins"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Pin Icon",IDC_STATIC,8,8,196,52
+    LTEXT           "Color",IDC_STATIC,16,24,17,8
+    PUSHBUTTON      "&Change...",IDC_PIN_COLOR,68,20,64,14
+    LTEXT           "",IDC_PIN_COLOR_BOX,136,21,28,13,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "&Tracking rate",IDC_STATIC,16,42,43,8
+    EDITTEXT        IDC_POLL_RATE,68,40,40,12,ES_NUMBER
+    CONTROL         "UpDown1",IDC_POLL_RATE_UD,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,96,40,11,11
+    LTEXT           "msec",IDC_STATIC,116,42,22,8,NOT WS_GROUP
+    GROUPBOX        "Tray Icon &Activation",IDC_STATIC,8,68,196,40,WS_GROUP
+    CONTROL         "Single click",IDC_TRAY_SINGLE_CLICK,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,16,80,52,8
+    CONTROL         "Double click",IDC_TRAY_DOUBLE_CLICK,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,16,92,56,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_TRAY MENU DISCARDABLE 
+CHARACTERISTICS 0x00000001
+BEGIN
+    POPUP "(tray)"
+    BEGIN
+        MENUITEM "&Enter pin mode",             CM_NEWPIN
+        MENUITEM "&Remove all pins",            CM_REMOVEPINS
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 CM_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       IDHELP
+        MENUITEM "&About",                      CM_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Close DeskPins",             CM_CLOSE
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VERSIONINFO_1 VERSIONINFO
+ FILEVERSION 1,30,0,0
+ PRODUCTVERSION 1,30,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Translator: (Info)\0"
+            VALUE "CompanyName", "Elias Fotinis\0"
+            VALUE "FileDescription", "DeskPins (Lang) interface\0"
+            VALUE "FileVersion", "1.30\0"
+            VALUE "InternalName", "DeskPins(Lang).dll\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002-2004 Elias Fotinis\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DeskPins(Lang).dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Elias Fotinis DeskPins\0"
+            VALUE "ProductVersion", "1.30\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_EDIT_AUTOPIN_RULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_OPT_AUTOPIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_OPT_HOTKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_OPT_LANG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_OPT_PINS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRBOXTTITLE        "%1 error"
+    IDS_WRNBOXTTITLE        "%1 warning"
+    IDS_OPTIONSTITLE        "DeskPins Options"
+    IDS_WRN_UIRANGE         "%1 must be between %2!d! and %3!d!"
+    IDS_NEWRULEDESCR        "<new>"
+    IDS_LANG                "English v1.30"
+    IDS_ERR_HOTKEYSSET      "Could not setup some hotkeys.\r\n\r\nCheck that the hotkeys specified in the Options dialog are not in use by other applications."
+    IDS_ERR_DLGCREATE       "Could not create dialog box"
+    IDS_ERR_MUTEXFAILCONFIRM 
+                            "Could not check whether DeskPins is already running.\r\n\r\nWould you like to start it anyway?"
+    IDS_ERR_WNDCLSREG       "Could not register window class"
+    IDS_ERR_SETPINPARENTFAIL "Could not set the pin's parent window"
+    IDS_ERR_SETTOPMOSTFAIL  "Could not make the window topmost"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_COULDNOTFINDWND "Could not find window"
+    IDS_ERR_ALREADYTOPMOST  "Window is already top-most"
+    IDS_ERR_CANNOTPINDESKTOP "Cannot pin the desktop"
+    IDS_ERR_CANNOTPINTASKBAR "Cannot pin the taskbar"
+    IDS_ERR_PINWND          "Could not pin window"
+    IDS_ERR_PINCREATE       "Could not create pin"
+    IDS_ERR_ALREADYRUNNING  "DeskPins is already running"
+    IDS_ERR_HELPMISSING     "Help file not found"
+    IDS_ERR_CCINIT          "Could not load common controls"
+    IDS_ERR_HOOKDLL         "Could not load hook DLL.\r\n\r\nAutopin has been turned off."
+    IDS_TRAYTIP             "Pins"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
