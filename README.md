@@ -10,9 +10,12 @@ I am not the author of this code. The original author is (Elias Fotinis)[https:/
 Unknown; author mentions 'open source' on his website, so whatever he means by that.
 
 
+*****************************
+*****************************
+*****************************
+*****************************
 
-
-## Original README.md incl. in author's source code below
+#Original README.md incl. in author's source code below
 
 DeskPins
 ========
